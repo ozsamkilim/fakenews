@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<p>{{article.text}}</p>
+
+<br>
+
+
+<h3>comments on this article</h3>
+
+<form method="post" novalidate>
+  {% csrf_token %}
+  {{ form }}
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
+
+
+
